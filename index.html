@@ -5,8 +5,12 @@
     <link rel="stylesheet" href="styles/main.css">
      <link rel="stylesheet" href="styles/colorbox.css">
     <title>Paul Bouldoires</title>
+
+
     <script src="script/jquery-3.3.1.min.js"></script>
-      <script src="script/jquery.colorbox-min.js"></script>
+    <script src="script/jquery.colorbox-min.js"></script>
+
+    <script src="script/jquery.lettering.js"></script>
 
 
   </head>
@@ -23,10 +27,10 @@
 
 
  <section id="bio">
-                <h1>Biographie</h1>
+                <h1 class="fancy_title">Biographie</h1>
                 <div class="bio-content-block">
                   <p>
-                    Paul Bouldoires est un français qui partage son temps de vie et de travail entre Bordeaux et Poitiers. Étudiante en Design Graphique à l’ECV de Bordeaux, et pourtant pas destinée à faire des études artistiques, elle s’ouvre à ce milieu il n’y a que 3 ans. Elle souhaite dorénavant obtenir un master en design corporate.</p>
+                    Paul Bouldoires est un français qui partage son temps de vie et de travail entre Bordeaux. Étudiante en Design Graphique à l’ECV de Bordeaux, et pourtant pas destinée à faire des études artistiques, elle s’ouvre à ce milieu il n’y a que 3 ans. Elle souhaite dorénavant obtenir un master en design corporate.</p>
   <p>"Je ne sais pas si j'ai fait le meilleur choix de cursus mais je ne regrette pas mon choix. » Diplômée de son baccalauréat scientifique, c’est grâce à sa cousine qui exerce l’Animation à l’ECV Bordeaux qu’elle se trouve une vocation dans ce milieu, et commence à s’exercer chez elle en dehors des cours qui ne la passionne pas.
   Originaire de la campagne, Lucile rêve de vivre dans un endroit calme au milieu de la nature. « J’aime Bordeaux, mais je fais en sorte de rentrer dans ma maison d’enfance le plus souvent possible pour me ressourcer. C’est là bas que je me sens le mieux et je ne compte pas rester vivre dans une grande ville pour cette raison ».
 
@@ -50,13 +54,11 @@
             <img src="images/AFFICHE320.jpg" alt="">
             <h2>Typographie</h2>
             <p>La typographie est pour moi l'élément le plus important dans la création graphique. J'aime beaucoup le fait de pouvoir faire passer un message simplement par des lettres.</p>
-            <a class="gallery" href="images/affiche.jpg">Voir plus</a>
           </div>
           <div class="comp-content">
             <img src="images/WARM320.jpg" alt="">
             <h2>Identité</h2>
             <p>J'aime mettre en place une identité et pouvoir la décliner sur de nombreux support. L'identité d'un produit ou d'une marque est pour moi un moyen très puissant de faire passer un état d'esprit et un sentiment. </p>
-            <a class="gallery" href="images/warm.jpg">Voir plus</a>
 
           </div>
           </div>
@@ -69,7 +71,7 @@
                 <div class="portfolio-content">
                     <div class="portfolio-content-item">
 
-                    <a class="gallery" href="images/masque.jpg"><img src="images/VIN.jpg" alt="This is a protfolio item"></a>
+                    <a class="gallery" href="images/VIN.jpg"><img src="images/VIN.jpg" alt="This is a protfolio item"></a>
 
 
                       <h2><a href="#">Identité Bordeaux Vins</a></h2>
@@ -84,20 +86,20 @@
                     </div>
                     <div class="portfolio-content-item">
 
-                      <img src="images/PIEUVRE.jpg" alt="This is a protfolio item">
+                      <a class="gallery" href="images/PIEUVRE.jpg"><img src="images/PIEUVRE.jpg" alt="This is a protfolio item"></a>
 
                       <h2><a href="#">Red Octopus</a></h2>
                     </div>
                     <div class="portfolio-content-item">
-                      <img src="images/MASQUE.jpg" alt="This is a protfolio item">
+                      <a class="gallery" href="images/MASQUE.jpg"><img src="images/MASQUE.jpg" alt="This is a protfolio item"></a>
                       <h2><a href="#">Illustration Italie</a></h2>
                     </div>
                     <div class="portfolio-content-item">
-                      <img src="images/AFFICHE.jpg" alt="This is a protfolio item">
+                      <a class="gallery" href="images/AFFICHE.jpg"><img src="images/AFFICHE.jpg" alt="This is a protfolio item"></a>
                       <h2><a href="#">Affiche Typographique</a></h2>
                     </div>
                     <div class="portfolio-content-item">
-                      <img src="images/AB.jpg" alt="This is a protfolio item">
+                      <a class="gallery" href="images/AB.jpg"><img src="images/AB.jpg" alt="This is a protfolio item"></a>
                       <h2><a href="#">36 days of type</a></h2>
                     </div>
                 </div>
@@ -107,17 +109,15 @@
 <footer>
                       <div class="address">
 
-                        <span>33 rue de la Course</span>
-                        <span>33000</span>
-                        <span>Bordeaux</span>
-                        <span>France</span>
+                        <span>33 rue de la Course 33000 Bordeaux</span>
+
                       </div>
 
                       <div class="social-links">
                         <ul>
-                          <li>Linkedin</li>
-                          <li>Mysite</li>
-                          <li>Facebook</li>
+                          <p>Behance</p>
+                          <p>Instagram</p>
+                          <p>Facebook</p>
                         </ul>
 
                       </div>
@@ -129,6 +129,13 @@ jQuery(document).ready(function () {
         jQuery('a.gallery').colorbox({ opacity:0.5 , rel:'group1' });
       });
     </script>
+
+    <script>
+    	  $(document).ready(function() {
+    	    $(".fancy_title").lettering();
+    	  });
+    </script>
+
 </body>
 
 </html>
